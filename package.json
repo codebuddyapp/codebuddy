@@ -4,7 +4,9 @@
   "description": ",-----.,--.                  ,--. ,---.   ,--.,------.  ,------.     '  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---'     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \\  :|  `--,      '  '--'\\|  |' '-' ''  ''  '\\ `-' | .'  /   |  ||  '--'  /|  `---.      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'     -----------------------------------------------------------------",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dzheky": "git config --global user.name Dzheky & git config --global user.email Zklimenchenko@gmail.com",
+    "bahromk": "git config --global user.name bahromk & git config --global user.email bahromk@yandex.ru"
   },
   "author": "",
   "license": "ISC",
