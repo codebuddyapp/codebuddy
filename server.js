@@ -6,7 +6,7 @@ app.get('/', function(req, res) {
 })
 
 
-app.get('/helloworld/:id', function(req, res) {
+app.get('/id/:id', function(req, res) {
     res.json({ hello: req.params.id})
 })
 console.log('hello world');

@@ -1,16 +1,21 @@
 {
   "name": "codebuddy",
   "version": "1.0.0",
-  "description": ",-----.,--.                  ,--. ,---.   ,--.,------.  ,------.     '  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---'     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \\  :|  `--,      '  '--'\\|  |' '-' ''  ''  '\\ `-' | .'  /   |  ||  '--'  /|  `---.      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'     -----------------------------------------------------------------",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dzheky": "git config --global user.name Dzheky & git config --global user.email Zklimenchenko@gmail.com",
-    "bahromk": "git config --global user.name bahromk & git config --global user.email bahromk@yandex.ru"
+    "start": "watchify ./public/script/jsx/index.jsx -o ./public/script/js/index.js -t [ babelify --presets [ es2015 react ] ]"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "babel-core": "^6.16.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-react": "^6.16.0",
+    "browserify": "^13.1.0",
+    "express": "^4.14.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "watchify": "^3.7.0"
   }
 }
