@@ -9,7 +9,14 @@ app.get('/', function(req, res) {
 app.get('/id/:id', function(req, res) {
     res.json({ hello: req.params.id})
 })
-console.log('hello world');
+
+app.get('/languages', function(req, res) {
+    res.json({
+        languages: ['JavaScript', 'Java', 'Python', 'C', 'C#', 'C++', 'PHP', 'Swift', 'Objective-C']
+    })
+})
+
+
 app.use(express.static(__dirname+'/public', {index: '_'}));
 
 
