@@ -9,27 +9,31 @@ class SearchElement extends React.Component{
         super(props);
         this.state = {
             found: ['JavaScript', 'Java', 'Python', 'C', 'C#', 'C++', 'PHP', 'Swift', 'Objective-C'],
-            open: false
+            searchText: ''
         }
         this.handleChange = this.handleChange.bind(this);
 
     }
     handleChange(text, source) {
-        console.log(text, source);
-        if(source === -1 && this.state.found.indexOf(text) === -1) {
-            $('#search-field').val('');
+        if(source !== -1 && this.state.found.indexOf(text) !== -1) {
+            var result = {id: source, label: text}
+            this.props.func(result);
         }
+        var self = this;
     }
 
     render() {
         return(
             <div className='search'>
                 <AutoComplete
+                    key={Math.random()}
                     id='search-field'
-                    floatingLabelText="Programming Language"
+                    searchText={this.state.searchText}
+                    style={{marginTop: '15px'}}
+                    hintText="Programming Language"
                     filter={AutoComplete.caseInsensitiveFilter}
-                    onNewRequest={this.handleChange}
-                    openOnFocus={false}
+                    onNewRequest={this.handleChange.bind(this)}
+                    openOnFocus={true}
                     dataSource={this.state.found}
                 />
                 

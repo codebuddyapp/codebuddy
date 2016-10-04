@@ -26,7 +26,7 @@ export default class LangChip extends React.Component {
          chips.push(<Chip
                     key={element.id}
                     onRequestDelete={function() {
-                        self.props.deleteLanguageChip(element.id)
+                        self.props.deleteLanguageChip(element.label)
                     }}
                     style={self.styles.chip}
                     >
