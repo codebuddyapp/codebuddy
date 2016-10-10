@@ -16,6 +16,7 @@ import SearchElement from './LangSearch.jsx'
 import LangChip from './LangChip.jsx'
 
 
+
 class Search extends React.Component {
     constructor(props) {
         super(props);
@@ -59,7 +60,6 @@ class Search extends React.Component {
                 <TextField
                     style={{marginTop: '15px'}}
                     id="lastName"
-                    hintText=""
                     hintText="Last Name"
                 />
                 <TextField
@@ -78,9 +78,9 @@ class Search extends React.Component {
                 <Divider style={{marginRight: '-25px', marginLeft: '-25px'}} />
                 <TextField hintText="FreeCodeCamp"  underlineShow={false} style={{lineHeight: '14px', height: '38px'}} />
                 <Divider style={{marginRight: '-25px', marginLeft: '-25px'}} />
-                <TextField hintText="CodePen"  underlineShow={false} style={{lineHeight: '14px', height: '38px'}} />
+                <TextField hintText="LinkedIn"  underlineShow={false} style={{lineHeight: '14px', height: '38px'}} />
                 <Divider style={{marginRight: '-25px', marginLeft: '-25px', marginBottom: '15px'}} />
-                 <RaisedButton label="Primary" primary={true} onClick={this.submit} />
+                 <RaisedButton label="Sign Up" primary={true} onClick={this.submit} />
             </form>
             );
     }

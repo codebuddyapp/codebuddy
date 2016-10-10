@@ -8,7 +8,7 @@ class SearchElement extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            found: ['JavaScript', 'Java', 'Python', 'C', 'C#', 'C++', 'PHP', 'Swift', 'Objective-C'],
+            found: ['JavaScript', 'Java', 'Python', 'C', 'C#', 'C++', 'Scala', 'Ruby', 'R', 'Perl', 'PHP', 'Swift', 'Objective-C'],
             searchText: ''
         }
         this.handleChange = this.handleChange.bind(this);
